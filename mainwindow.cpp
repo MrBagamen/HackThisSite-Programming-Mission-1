@@ -31,6 +31,10 @@ void MainWindow::ButtonClickHandler()
     {
         fileName = fd.selectedFiles();
     }
+    else
+    {
+        return;
+    }
 
     QFile file(fileName.at(0));
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){return;}
