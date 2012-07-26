@@ -1,0 +1,1 @@
+It's a solution to HTS's first programming mission.
