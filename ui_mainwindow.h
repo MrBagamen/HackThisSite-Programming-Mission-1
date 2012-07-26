@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu Jul 26 22:52:31 2012
+** Created: Fri Jul 27 01:35:31 2012
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -40,7 +40,9 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(421, 299);
+        MainWindow->resize(420, 320);
+        MainWindow->setMinimumSize(QSize(420, 320));
+        MainWindow->setMaximumSize(QSize(420, 320));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         pushButton = new QPushButton(centralWidget);
@@ -64,7 +66,7 @@ public:
         pushButton_2->setGeometry(QRect(140, 10, 271, 27));
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(10, 50, 58, 17));
+        label_3->setGeometry(QRect(10, 50, 401, 17));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);

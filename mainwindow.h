@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QFile>
+#include <QVector>
+#include <QtAlgorithms>
+#include <QMessageBox>
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +26,9 @@ public slots:
     
 private:
     Ui::MainWindow *ui;
+    QVector<QString> vecUnsorted;
+    QVector<QString> vecSorted;
+    bool wordlistLoaded;
 };
 
 #endif // MAINWINDOW_H

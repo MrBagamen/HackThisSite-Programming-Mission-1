@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>421</width>
-    <height>299</height>
+    <width>420</width>
+    <height>320</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>420</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>420</width>
+    <height>320</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>HackThisSite Programming Mission 1</string>
@@ -94,7 +106,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>58</width>
+      <width>401</width>
       <height>17</height>
      </rect>
     </property>
