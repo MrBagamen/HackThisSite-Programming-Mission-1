@@ -19,9 +19,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::ButtonClickHandler()
 {
+    ui->plainTextEdit->clear();
     QFileDialog fd(this);
     QStringList fileName;
-    QString wordList;
     QString temp;
     QVector<QString> vector;
 
@@ -38,17 +38,14 @@ void MainWindow::ButtonClickHandler()
 
     QFile file(fileName.at(0));
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)){return;}
-    wordList = file.readAll();
-
-    for(int i = 0; i < wordList.length(); i++)
+    while(!file.atEnd())
     {
-        temp += wordList[i];
-        if(temp.at(i+1) == '\n' || temp.at(i+1) == '\0')
-        {
-            vector.push_back(temp);
-            temp.clear();
-        }
+        temp = file.readLine();
+        qSort(temp.begin(), temp.end());
+        vector.push_back(temp);
+        temp.clear();
     }
+
 
     for(int i = 0; i < vector.size(); i++)
     {
